@@ -1,3 +1,6 @@
+let playerScore = 0
+let computerScore = 0
+
 function playRound(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
     console.log("Tie!");
@@ -22,20 +25,5 @@ const getPlayerChoice = () => {
   }
   return playerChoice;
 }
-
-let playerScore = 0
-let computerScore = 0
-
-let playerSelection = getPlayerChoice();
-let computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
-
-playerSelection = getPlayerChoice();
-computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
-
-playerSelection = getPlayerChoice();
-computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
 
 console.log(`Player Score: ${playerScore} | Computer Score: ${computerScore}`)
